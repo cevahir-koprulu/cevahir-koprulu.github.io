@@ -1,1 +1,197 @@
-"Hello World" 
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Cevahir Koprulu's Personal Website</title>
+  
+  <meta name="author" content="Cevahir Koprulu">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Po-han Li <font size=5>(李柏翰)</font></name>
+              </p>
+              <p>I am a PhD student in <a href="https://www.ece.utexas.edu/"> Department of Electrical and Computer Engineering</a>, <a href="https://www.utexas.edu/">University of Texas at Austin</a>. I am advised by Prof. <a href="https://www.ece.utexas.edu/people/faculty/sandeep-chinchali">Sandeep Chinchali</a> and Prof. <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu">Ufuk Topcu</a>.
+              I received my BS degree in Department of Electrical Engineering at National Taiwan University, where I worked with Prof. <a href="https://scholar.google.com/citations?user=QgJzCPoAAAAJ&hl">Wanjiun Liao</a>. </p>
+
+              <p style="text-align:center">
+                <a href="mailto:cevahir.koprulu@utexas.edu">Email</a> &nbsp/&nbsp
+                <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/cevahir-koprulu">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/cevahir-koprulu/">LinkedIn</a>
+              </p>
+
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/pp.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/pp.jpg" class="hoverZoomLink"></a>
+              <figcaption>The photo was taken on the UT campus.</figcaption>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:10px;width:100%;vertical-align:middle">
+              <h1>Research</h1>
+              <p>
+              My research interests include networked control and optimization. In particular, my projects are related to decentralized data sharing,  optimization, and task-aware communication. 
+
+              <h2>Task-aware Data Transmission</h2> 
+              Data plays an important role in modern networked control systems or machine learning models. 
+              Most of the time, the data are generated in geographically distributed locations, while the tasks – controllers or machine learning models – are centralized in a fixed location.
+              The data needs to be transmitted from diverse sources to the centralized location, and during transmission, it can be affected in several ways, such as adversarial attacks, anonymization (differential privacy) noise, and data compression.
+              However, data transmission in such systems is often not optimized for the centralized task. 
+              My projects discuss how transmission can affect the performance of control system or machine learning models, and more importantly, how to design a transmission process that is optimized for tasks in the centralized location, which we refer to as task-aware.
+              
+              
+              <p></p>
+              <h3>Publications</h3>
+
+              <a href="https://arxiv.org/abs/2210.00358">
+                <papertitle>Differentially Private Timeseries Forecasts for Networked Control </papertitle>
+              </a>
+              <br> 
+							<strong>Po-han Li</strong>, 
+              Sandeep P Chinchali, 
+              Ufuk Topcu
+              <br>
+              <em> American Control Conference (ACC)</em>, 2023
+              <br>
+              <p></p>
+
+
+              <a href="https://ieeexplore.ieee.org/document/9929419/">
+                <papertitle>Adversarial Examples for Model-Based Control: A Sensitivity Analysis</papertitle>
+              </a>
+              <br> 
+							<strong>Po-han Li</strong>, 
+              Ufuk Topcu, 
+              Sandeep P Chinchali
+              <br>
+              <em>58th Allerton Conference on Communication, Control, and Computing</em>, 2022
+              <br>
+              <p></p>
+              <!-- <strong>Abstract: </strong><br>
+                We propose a decentralized learning framework for robots to trade, price, and discover valuable machine learning (ML) training data. Today's robotic fleets, such as self-driving vehicles, can gather terabytes of rich video and LIDAR data in diverse, geo-distributed environments. Often, robots in one city or home might observe training data that is commonplace for them, but is actually a valuable, out-of-distribution (OoD) dataset to train robust ML models at robots elsewhere. However, simply sharing all this diverse data in cloud databases is infeasible due to limits on privacy and network bandwidth. Inspired by decentralized file sharing protocols like BitTorrent, we propose a novel system where each robot is provisioned with a learnable privacy filter and sharing model. Importantly, this sharing model attempts to predict and prioritize which sensory percepts are of high value to other robotic peers using a decentralized voting and feedback mechanism. Our scheme naturally raises timely questions on data privacy and valuation as companies start to deploy robots in our homes, hospitals, and roads.
+              <p></p> -->
+
+              <h2>Decentralized Data Sharing</h2> 
+              Federated learning (FL) is commonly used to efficiently train deep neuron networks (DNN) among a group of devices. However, one major restriction of FL is that it only applies to homogeneous neuron networks, i.e., networks with identical structure and layers. Thus, my projects focus on how to share raw data, but not gradients, among devices to retrain neuron networks, and most importantly, to avoid the previous restriction. Moreover, the projects discuss under network bandwidth constraints, how to share a limited number of valuable data without violating privacy of devices. Topics related to these projects are: out-of-distribution (OoD) detectors, data valuation, active learning, data sanitizing, differential privacy, and distributed optimization. 
+
+              <h3>Publications</h3>
+              
+              <a href="https://openreview.net/forum?id=iM932PeUi_7&referrer=%5Bthe%20profile%20of%20Sandeep%20P.%20Chinchali%5D(%2Fprofile%3Fid%3D~Sandeep_P._Chinchali1)">
+                <papertitle>Data Games: A Game-Theoretic Approach to Swarm Robotic Data Collection</papertitle>
+              </a>
+              <br>
+              Oguzhan Akcin, 
+              <strong>Po-han Li</strong>, 
+              Shubhankar Agarwal, 
+              Sandeep P. Chinchali
+              <br>
+              <em>CoRL</em>, 2022
+              <br>
+              <p></p>
+              <!-- <strong>Abstract: </strong><br>
+              Fleets of networked autonomous vehicles (AVs) collect terabytes of sensory data, which is often transmitted to central servers (the "cloud") for training machine learning (ML) models. Ideally, these fleets should upload all their data, especially from rare operating contexts, in order to train robust ML models. However, this is infeasible due to prohibitive network bandwidth and data labeling costs. Instead, we propose a cooperative data sampling strategy where geo-distributed AVs collaborate to collect a diverse ML training dataset in the cloud. Since the AVs have a shared objective but minimal information about each other's local data distribution and perception model, we can naturally cast cooperative data collection as an N-player mathematical game. We show that our cooperative sampling strategy uses minimal information to converge to a centralized oracle policy with complete information about all AVs. Moreover, we theoretically characterize the performance benefits of our game-theoretic strategy compared to greedy sampling. Finally, we experimentally demonstrate that our method outperforms standard benchmarks by up to 21.9% on 4 perception datasets, including for autonomous driving in adverse weather conditions. Crucially, our experimental results on real-world datasets closely align with our theoretical guarantees.
+              <p></p>    -->
+
+              <a href="https://proceedings.mlr.press/v164/geng22a.html">
+                <papertitle>Decentralized Sharing and Valuation of Fleet Robotic Data
+                </papertitle>
+              </a>
+              <br>
+              Yuchong Geng,
+              Dongyue Zhang, 
+							<strong>Po-han Li</strong>, 
+              Oguzhan Akcin, 
+              Ao Tang, 
+              Sandeep P Chinchali
+              <br>
+              <em>CoRL</em>, 2021
+              <br>
+              <p></p>
+              <!-- <strong>Abstract: </strong><br>
+                We propose a decentralized learning framework for robots to trade, price, and discover valuable machine learning (ML) training data. Today's robotic fleets, such as self-driving vehicles, can gather terabytes of rich video and LIDAR data in diverse, geo-distributed environments. Often, robots in one city or home might observe training data that is commonplace for them, but is actually a valuable, out-of-distribution (OoD) dataset to train robust ML models at robots elsewhere. However, simply sharing all this diverse data in cloud databases is infeasible due to limits on privacy and network bandwidth. Inspired by decentralized file sharing protocols like BitTorrent, we propose a novel system where each robot is provisioned with a learnable privacy filter and sharing model. Importantly, this sharing model attempts to predict and prioritize which sensory percepts are of high value to other robotic peers using a decentralized voting and feedback mechanism. Our scheme naturally raises timely questions on data privacy and valuation as companies start to deploy robots in our homes, hospitals, and roads.
+              <p></p>    -->
+
+              
+        </tbody></table>
+
+
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+          <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
+            <td style="padding:10px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerf_supervision.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerf_supervision.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfsuper_start() {
+                  document.getElementById('nerfsuper_image').style.opacity = "1";
+                }
+
+                function nerfsuper_stop() {
+                  document.getElementById('nerfsuper_image').style.opacity = "0";
+                }
+                nerfsuper_stop()
+              </script>
+            </td>
+            <td style="padding:10px;width:75%;vertical-align:middle">
+							<a href="http://yenchenlin.me/nerf-supervision/">
+                <papertitle>NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
+              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
+              <strong>Jonathan T. Barron</strong>,  <br>
+              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>, 
+              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
+              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+              <br>
+              <em>ICRA</em>, 2022  
+              <br>
+							<a href="http://yenchenlin.me/nerf-supervision/">project page</a> / 
+							<a href="https://arxiv.org/abs/2203.01913">arXiv</a> / 
+							<a href="https://www.youtube.com/watch?v=_zN-wVwPH1s">video</a> /
+							<a href="https://github.com/yenchenlin/nerf-supervision-public">code</a> / 
+							<a href="https://colab.research.google.com/drive/13ISri5KD2XeEtsFs25hmZtKhxoDywB5y?usp=sharing">colab</a>				
+              <p></p>
+              <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
+            </td>
+          </tr> -->
+        <!-- </tbody></table> -->
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                This website is based on Jon Barron's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+                His website can be found <a href="https://jonbarron.info/">here</a>.
+                <br>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
