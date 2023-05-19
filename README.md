@@ -40,7 +40,7 @@ We develop a reinforcement-learning algorithm that infers a reward machine that 
     * Christos Verginis, Cevahir Koprulu, Sandeep Chinchali, Ufuk Topcu
     * Under review
 
-## Curriculum Learning for Reinforcement Learning
+## Level-k Game Theory to Model Human Drivers
 Level-k game theory is a hierarchical multi-agent decision-making model where a level-k player is a best responder to a level-(k-1) player.
 In this work, we studied level-k game theory to model reasoning levels of human drivers. 
 Different from existing methods, we proposed a dynamic approach, 
