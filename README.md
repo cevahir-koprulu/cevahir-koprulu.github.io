@@ -1,4 +1,4 @@
-[Personal Website Link](https://cevahir-koprulu.github.io/)
+[Personal Website Link](https://cevahir-koprulu1.github.io/)
 
 Repository for my personal website.
 
