@@ -49,6 +49,7 @@
             <h1>News</h1> 
             <ul>
               <li><span> Aug 2025: I finished my summer research internship at Bosch Center for Artificial Intelligence! </li>
+              <li><span> Aug 2025: I became an organizer at <a href="https://www.cs.utexas.edu/~rlrg/website.md.html">the Reinforcement Learning Reading Group</a> at UT Austin! </li>
               <li><span> February 2025: One paper got accepted by L4DC 2025! <a href="https://arxiv.org/pdf/2412.01114">Dense Dynamics-Aware Reward Synthesis</a></li>
               <li><span> Jan 2025: Two papers got accepted by ICLR 2025! <a href="https://openreview.net/forum?id=f3QR9TEERH&referrer=%5Bthe%20profile%20of%20Cevahir%20Koprulu%5D(%2Fprofile%3Fid%3D~Cevahir_Koprulu1)">Safety-Prioritizing Curricula</a> and <a href="https://openreview.net/forum?id=hxUMQ4fic3&referrer=%5Bthe%20profile%20of%20Cevahir%20Koprulu%5D(%2Fprofile%3Fid%3D~Cevahir_Koprulu1)">Neural SDEs for Offline RL</a></li>
               <li><span> Aug 2024: I finished my summer research internship at Honda Research Institute! </li>
@@ -68,14 +69,14 @@
               <p>
               I do research on reinforcement learning (RL), with a focus on generalization and curriculum learning (CL). 
               My publications can be found on <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">my Google Scholar page</a>, and some are listed with details below. 
-              During my Ph.D. so far, I have done researach internships at Bosch Center for Artificial Intelligence and Honda Research Institute. 
-              At Bosch, I developed <strong>CL4AD</strong>, the first integration of CL into batched autonomous driving simulators, accelerating training by 77%
-              At HRI, I developed an action advising framework, Gen2Spec, that distills knowledge from generalist meta RL agents to specialists in a continual learning setting. 
+              During my Ph.D. so far, I have done research internships at Bosch Center for Artificial Intelligence and Honda Research Institute. 
+              At Bosch, I developed <strong>CL4AD</strong>, the first integration of CL into batched autonomous driving simulators, accelerating training by 77%.
+              At HRI, I developed an action advising framework, Gen2Spec, that distills knowledge from generalist agents to specialists in a continual learning setting. 
               Recently, I have been focusing on the following research directions:
               <ul>
                 <li><span><strong>Risk-aware CL for RL-based Post Training:</strong> We develop a risk-aware curriculum generation algorithm for RL-based fine-tuning of language models.</li>
-                <li><span><strong>Conformal Prediction for Uncertainty-aware CL:</strong> We adapt conformal prediction to prioritize tasks with high model uncertainty via curriculum learning.</li>
-                <li><span><strong>Synthetic Curricula for Autonomous Driving:</strong> We guide synthetic scenario generation tools to train autonomous driving agents using curriculum learning.</li>
+                <li><span><strong>Conformal Prediction for Uncertainty-aware CL:</strong> We adopt conformal prediction for curriculum learning to prioritize tasks with high model uncertainty during post-training.</li>
+                <li><span><strong>Synthetic Curricula for Autonomous Driving:</strong> We guide generative models via curriculum learning for synthetic traffic scenario generation.</li>
                 </ul>
               
               <h2>Curriculum Learning for Reinforcement Learning</h2> 
@@ -148,12 +149,12 @@
               <br>
               <p></p>
 
-              <h2>Exploiting Side Information for Offline and Online+Offline RL</h2> 
+              <h2>Exploiting Side Information for Offline and Mixed RL</h2> 
               We investigate use of side information to improve the performance of RL agents offline and mixed (offline + online) settings.
               For offline RL, we develop an uncertainty-aware, offline model-based reinforcement learning approach (NUNO) with neural stochastic differential equations, 
-              where NUNO levelarages prior physics knowledge as inductive bias. NUNO outperforms the state-of-the-art in continuous control benchmarks, particularly in low-quality datasets. 
+              levelaraging prior physics knowledge as inductive bias, improving state-of-the-art in low-quality data regimes. 
               For mixed settings, we introduce a systematic reward-shaping framework that distills the information contained in (1) a task-agnostic prior data set and 
-              (2) a small number of task-specific expert demonstrations, and then uses these priors to synthesize dense dynamics-aware rewards for the given task.
+              (2) a few task-specific expert demonstrations for dense dynamics-aware reward synthesis.
 
               <p></p>
               <h3>Publications</h3>
