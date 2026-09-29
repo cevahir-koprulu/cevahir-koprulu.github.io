@@ -28,7 +28,7 @@
 
               <p style="text-align:center">
                 <a href="mailto:cevahir.koprulu@utexas.edu">Email</a> &nbsp/&nbsp
-                <a href="data/CV.pdf">CV</a> &nbsp/&nbsp
+                <a href="data/CV_CevahirKoprulu.pdf">CV</a> &nbsp/&nbsp
                 <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">Google Scholar</a> &nbsp/&nbsp
                 <a href="https://github.com/cevahir-koprulu">Github</a> &nbsp/&nbsp
                 <a href="https://www.linkedin.com/in/cevahir-koprulu/">LinkedIn</a>
@@ -48,6 +48,7 @@
           <td style="padding:10px;width:100%;vertical-align:middle">
             <h1>News</h1> 
             <ul>
+              <li><span> Aug 2026: I finished my summer internship at Waymo on the Planner team! </li>
               <li><span> Aug 2025: I finished my summer research internship at Bosch Center for Artificial Intelligence! </li>
               <li><span> Aug 2025: I became an organizer at <a href="https://www.cs.utexas.edu/~rlrg/website.md.html">the Reinforcement Learning Reading Group</a> at UT Austin! </li>
               <li><span> February 2025: One paper got accepted by L4DC 2025! <a href="https://arxiv.org/pdf/2412.01114">Dense Dynamics-Aware Reward Synthesis</a></li>
@@ -63,186 +64,176 @@
         </tr>
 
        
-            <tr>
-            <td style="padding:10px;width:100%;vertical-align:middle">
-              <h1>Research</h1>
-              <p>
-              I do research on reinforcement learning (RL), with a focus on generalization and curriculum learning (CL). 
-              My publications can be found on <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">my Google Scholar page</a>, and some are listed with details below. 
-              During my Ph.D. so far, I have done research internships at Bosch Center for Artificial Intelligence and Honda Research Institute. 
-              At Bosch, I developed <strong>CL4AD</strong>, the first integration of CL into batched autonomous driving simulators, accelerating training by 77%.
-              At HRI, I developed an action advising framework, Gen2Spec, that distills knowledge from generalist agents to specialists in a continual learning setting. 
-              Recently, I have been focusing on the following research directions:
-              <ul>
-                <li><span><strong>Risk-aware CL for RL-based Post Training:</strong> We develop a risk-aware curriculum generation algorithm for RL-based fine-tuning of language models.</li>
-                <li><span><strong>Conformal Prediction for Uncertainty-aware CL:</strong> We adopt conformal prediction for curriculum learning to prioritize tasks with high model uncertainty during post-training.</li>
-                <li><span><strong>Synthetic Curricula for Autonomous Driving:</strong> We guide generative models via curriculum learning for synthetic traffic scenario generation.</li>
-                </ul>
-              
-              <h2>Curriculum Learning for Reinforcement Learning</h2> 
-              The design of task sequences, i.e., curricula, improves the performance of RL agents and speeds up the convergence in complex tasks.
-              An effective curriculum typically begins with easy tasks and gradually changes them toward the target tasks.
-              Common approaches require manually tailoring the curricula to identify easy and hard tasks, which requires domain knowledge that might be unavailable.
-              My research focuses on developing automated curriculum generations algorithms that utilize generative models, introduce notions of risk and uncertainty, address constrained RL, and exploit task specifications.
-              <p></p>
-              <h3>Publications</h3>
-
-              <a href="https://openreview.net/forum?id=f3QR9TEERH&referrer=%5Bthe%20profile%20of%20Cevahir%20Koprulu%5D(%2Fprofile%3Fid%3D~Cevahir_Koprulu1)">
-                <papertitle>Safety-Prioritizing Curricula for Constrained Reinforcement Learning</papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Thiago D. Simão, 
-              Nils Jansen,
-              Ufuk Topcu
-              <br>
-              <em> International Conference on Learning Representations (ICLR)</em>, 2025
-              <br>
-              <p></p>
- 
-              <a href="https://proceedings.mlr.press/v216/koprulu23b.html">
-                <papertitle>Risk-aware Curriculum Generation for Heavy-tailed Task Distributions </papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Thiago D. Simão, 
-              Nils Jansen,
-              Ufuk Topcu
-              <br>
-              <em> Conference on Uncertainty in Artifical Intelligence (UAI)</em>, 2023
-              <br>
-              <p></p>
-
-              <a href="https://proceedings.mlr.press/v216/koprulu23a.html">
-              <papertitle>Reward-Machine-Guided, Self-Paced Reinforcement Learning </papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Ufuk Topcu
-              <br>
-              <em> Conference on Uncertainty in Artifical Intelligence (UAI)</em>, 2023
-              <br>
-              <p></p>
-
-              <a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598964">
-                <papertitle>Reward-Machine-Guided, Self-Paced Reinforcement Learning </papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Ufuk Topcu
-              <br>
-              <em> International Conference on Autonomous Agents and Multiagent Systems
-                (AAMAS)</em>, 2023 (accepted as Extended Abstract)
-              <br>
-              <p></p>
-              <h3>Workshops</h3>
-              <a href="https://proceedings.mlr.press/v216/koprulu23b.html">
-                <papertitle>Prioritizing Safety via Curriculum Learning </papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Thiago D. Simão, 
-              Nils Jansen,
-              Ufuk Topcu
-              <br>
-              <em> RLBRew and RLSW at Reinforcement Learning Conference </em>, 2024
-              <br>
-              <p></p>
-
-              <h2>Exploiting Side Information for Offline and Mixed RL</h2> 
-              We investigate use of side information to improve the performance of RL agents offline and mixed (offline + online) settings.
-              For offline RL, we develop an uncertainty-aware, offline model-based reinforcement learning approach (NUNO) with neural stochastic differential equations, 
-              levelaraging prior physics knowledge as inductive bias, improving state-of-the-art in low-quality data regimes. 
-              For mixed settings, we introduce a systematic reward-shaping framework that distills the information contained in (1) a task-agnostic prior data set and 
-              (2) a few task-specific expert demonstrations for dense dynamics-aware reward synthesis.
-
-              <p></p>
-              <h3>Publications</h3>
-              <a href="https://openreview.net/forum?id=hxUMQ4fic3&referrer=%5Bthe+profile+of+Cevahir+Koprulu%5D%28%2Fprofile%3Fid%3D%7ECevahir_Koprulu1%29">
-                <papertitle>Neural Stochastic Differential Equations for Uncertainty-Aware Offline RL</papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Franck Djeumou, 
-              Ufuk Topcu
-              <br>
-              <em> International Conference on Learning Representations (ICLR)</em>, 2025
-              <br>
-              <p></p>
- 
-              <a href="https://arxiv.org/pdf/2412.01114">
-                <papertitle>Dense Dynamics-Aware Reward Synthesis: Integrating Prior Experience with Demonstrations </papertitle>
-              </a>
-              <br> 
-							<strong>Cevahir Koprulu</strong>, 
-              Po-han Li, 
-              Tianyu Qiu,
-              Ruihan Zhao,
-              Tyler Westenbroek,
-              David Fridovic-Keil,
-              Sandeep Chinchali,
-              Ufuk Topcu
-              <br>
-              <em> Learning for Dynamics and Control (L4DC) Conference </em>, 2025
-              <br>
-              <p></p>
-
-              <h2>Learning Reward Machines and Policies</h2> 
-              We study the problem of reinforcement learning for a task encoded by a reward machine. 
-              The task is defined over a set of properties in the environment, called atomic propositions, and represented by Boolean variables. 
-              One unrealistic assumption commonly used in the literature is that the truth values of these propositions are accurately known. 
-              In real situations, however, these truth values are uncertain since they come from sensors that suffer from imperfections. 
-              At the same time, reward machines can be difficult to model explicitly, especially when they encode complicated tasks. 
-              We develop a reinforcement-learning algorithm that infers a reward machine that encodes the underlying task while learning how to execute it, despite the uncertainties of the propositions' truth values.              <p></p>
-              
-              <h3>Publications</h3>
-
-              <a href="https://www.sciencedirect.com/science/article/pii/S0004370224000821">
-                <papertitle>Joint Learning of Reward Machines and Policies in Environments with Partially Known Semantics
-                </papertitle>
-              </a>
-              <br>
-              Christos Verginis, 
-							<strong>Cevahir Koprulu</strong>, 
-              Sandeep Chinchali, 
-              Ufuk Topcu
-              <br>
-              <em>Aritificial Intelligence, 2024</em>
-              <br>
-              <p></p>
-              
-              <h2>Level-k Game Theory to Model Human Drivers</h2>
-              Level-k game theory is a hierarchical multi-agent decision-making model where a level-k player is a best responder to a level-(k-1) player.
-              In this work, we studied level-k game theory to model reasoning levels of human drivers. 
-              Different from existing methods, we proposed a dynamic approach, 
-              where the actions are the levels themselves, resulting in a dynamic behavior. 
-              The agent adapts to its environment by exploiting different behavior models as available moves to choose from, depending on the requirements of the traffic situation. 
-
-              <h3>Publications</h3>
-
-              <a href="https://ieeexplore.ieee.org/abstract/document/9658815">
-                <papertitle>Act to Reason: A Dynamic Game Theoretical Driving Model for Highway Merging Applications
-                </papertitle>
-              </a>
-              <br>
-							<strong>Cevahir Koprulu</strong>, 
-              Yildiray Yildiz
-              <br>
-              <em> IEEE Conference on Control Technology and Applications (CCTA)</em>, 2021
-              <br>
-              <p></p>
-
-              <a href="https://arxiv.org/abs/2101.05399">
-                <papertitle>Act to reason: A dynamic game theoretical model of driving
-
-              </a>
-              <br>
-							<strong>Cevahir Koprulu</strong>, 
-              Yildiray Yildiz
-              <br>
-              <em>ArXiV</em>, 2021
-              <br>
-              <p></p>
+        <tr>
+          <td style="padding:10px;width:100%;vertical-align:middle">
+            <h1>Research</h1>
+            <p>
+            My research focuses on reinforcement learning (RL): which tasks an agent trains on and what signal it learns from.
+            My work proposes automated curriculum generation methods for heavy tailed task distributions, temporal specifications, and cost constraints, and for the scale of batched simulators.
+            In addition, it develops methods for reward synthesis from task agnostic experience with a few demonstrations, and from physics informed dynamics models with distance aware uncertainty estimates.
+            My publications can be found on <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">my Google Scholar page</a>, and some are listed with details below.
+            </p>
+            <p>
+            My Ph.D. includes internships at Waymo, on learning from unsupervised driving data within the data flywheel for onboard planner models;
+            at Bosch Center for Artificial Intelligence, on <strong>CL4AD</strong>, the first integration of CL into batched autonomous driving simulators, accelerating training by 77%;
+            and at Honda Research Institute, on Gen2Spec, an action advising framework that distills knowledge from generalist agents to specialists in a continual learning setting.
+            </p>
+        
+            <h2>Ongoing Work</h2>
+            <ul>
+              <li><span><strong>Curricula for Composing Traffic Behaviors:</strong> My work guides synthetic traffic scenario generation in batched driving simulators through curricula that compose driving behaviors.</li>
+              <li><span><strong>Curricula for Reinforcement Unlearning:</strong> My work escalates task difficulty during RL to make large language models forget targeted knowledge.</li>
+            </ul>
+        
+            <h2>What Agents Train On: Curriculum Learning and Unsupervised Environment Design</h2>
+            A curriculum sequences the tasks an agent trains on and adapts as the agent improves.
+            Standard curriculum learning assumes target task distributions with bounded tails, Markovian rewards, and no safety constraints.
+            My work asks what a curriculum should do when these assumptions fail, and proposes risk aware curricula for heavy tailed task distributions, specification aware curricula guided by reward machines, and safety prioritizing curricula for constrained RL.
+            It also scales curriculum learning and unsupervised environment design to batched autonomous driving simulators that train on real traffic scenarios.
+            <p></p>
+            <h3>Publications</h3>
+        
+            <a href="#"> <!-- TODO: add CL4AD arXiv link -->
+              <papertitle>Scaling Curriculum Learning for Autonomous Driving</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            David Paz,
+            Feng Tao,
+            Yuliang Guo,
+            Xinyu Huang,
+            Ufuk Topcu,
+            Liu Ren
+            <br>
+            <em>ArXiv</em>, 2026
+            <br>
+            <p></p>
+        
+            <a href="https://openreview.net/forum?id=f3QR9TEERH">
+              <papertitle>Safety-Prioritizing Curricula for Constrained Reinforcement Learning</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Thiago D. Simão,
+            Nils Jansen,
+            Ufuk Topcu
+            <br>
+            <em>International Conference on Learning Representations (ICLR)</em>, 2025
+            <br>
+            <p></p>
+        
+            <a href="https://proceedings.mlr.press/v216/koprulu23b.html">
+              <papertitle>Risk-aware Curriculum Generation for Heavy-tailed Task Distributions</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Thiago D. Simão,
+            Nils Jansen,
+            Ufuk Topcu
+            <br>
+            <em>Conference on Uncertainty in Artificial Intelligence (UAI)</em>, 2023
+            <br>
+            <p></p>
+        
+            <a href="https://proceedings.mlr.press/v216/koprulu23a.html">
+              <papertitle>Reward-Machine-Guided, Self-Paced Reinforcement Learning</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Ufuk Topcu
+            <br>
+            <em>Conference on Uncertainty in Artificial Intelligence (UAI)</em>, 2023
+            <br>
+            <p></p>
+        
+            <a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598964">
+              <papertitle>Reward-Machine-Guided, Self-Paced Reinforcement Learning</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Ufuk Topcu
+            <br>
+            <em>International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2023 (accepted as Extended Abstract)
+            <br>
+            <p></p>
+        
+            <h3>Workshops</h3>
+            <a href="https://openreview.net/forum?id=EaaWjhIQwr7">
+              <papertitle>Prioritizing Safety via Curriculum Learning</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Thiago D. Simão,
+            Nils Jansen,
+            Ufuk Topcu
+            <br>
+            <em>RLBRew and RLSW at Reinforcement Learning Conference</em>, 2024
+            <br>
+            <p></p>
+        
+            <h2>What Agents Learn From: Reward Synthesis from Offline Data and Prior Knowledge</h2>
+            Sparse rewards and imperfect offline data limit how much an agent learns from each transition.
+            My work synthesizes rewards from offline data and prior knowledge.
+            For long horizon tasks with sparse rewards, it combines task agnostic prior experience with a few demonstrations to construct dense rewards through potential based reward shaping.
+            For offline model based RL, it learns dynamics as neural stochastic differential equations that carry prior physics knowledge, and penalizes synthetic rollouts by their uncertainty estimates.
+            <p></p>
+            <h3>Publications</h3>
+        
+            <a href="https://arxiv.org/pdf/2412.01114">
+              <papertitle>Dense Dynamics-Aware Reward Synthesis: Integrating Prior Experience with Demonstrations</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Po-han Li,
+            Tianyu Qiu,
+            Ruihan Zhao,
+            Tyler Westenbroek,
+            David Fridovich-Keil,
+            Sandeep Chinchali,
+            Ufuk Topcu
+            <br>
+            <em>Learning for Dynamics and Control (L4DC) Conference</em>, 2025
+            <br>
+            <p></p>
+        
+            <a href="https://openreview.net/forum?id=hxUMQ4fic3">
+              <papertitle>Neural Stochastic Differential Equations for Uncertainty-Aware Offline RL</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Franck Djeumou,
+            Ufuk Topcu
+            <br>
+            <em>International Conference on Learning Representations (ICLR)</em>, 2025
+            <br>
+            <p></p>
+        
+            <h2>Other Work</h2>
+            <h3>Publications</h3>
+        
+            <a href="https://www.sciencedirect.com/science/article/pii/S0004370224000821">
+              <papertitle>Joint Learning of Reward Machines and Policies in Environments with Partially Known Semantics</papertitle>
+            </a>
+            <br>
+            Christos Verginis,
+            <strong>Cevahir Koprulu</strong>,
+            Sandeep Chinchali,
+            Ufuk Topcu
+            <br>
+            <em>Artificial Intelligence</em>, 2024
+            <br>
+            <p></p>
+        
+            <a href="https://ieeexplore.ieee.org/abstract/document/9658815">
+              <papertitle>Act to Reason: A Dynamic Game Theoretical Driving Model for Highway Merging Applications</papertitle>
+            </a>
+            <br>
+            <strong>Cevahir Koprulu</strong>,
+            Yildiray Yildiz
+            <br>
+            <em>IEEE Conference on Control Technology and Applications (CCTA)</em>, 2021
+            <br>
+            <p></p>
 
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
