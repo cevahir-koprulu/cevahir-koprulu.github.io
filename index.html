@@ -1,257 +1,110 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Cevahir Koprulu's Personal Website</title>
-  
-  <meta name="author" content="Cevahir Koprulu">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  <title>Cevahir Koprulu — Reinforcement Learning Research</title>
+  <meta name="description" content="Cevahir Koprulu is a final-year PhD student at UT Austin researching sample-efficient reinforcement learning, curriculum generation, and reward synthesis, with industry experience at Waymo, Bosch, and Honda.">
+  <meta name="theme-color" content="#9b482f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Cevahir Koprulu</name>
-              </p>
-              <p>I am a Ph.D. student at <a href="https://www.ece.utexas.edu/">the Department of Electrical and Computer Engineering</a>, <a href="https://www.utexas.edu/">University of Texas at Austin</a>. 
-              I am advised by Prof. <a href="https://scholar.google.com/citations?user=jeNGFfQAAAAJ&hl=en">Ufuk Topcu</a>.
-              I received my B.Sc. degree from <a href="https://ee.bilkent.edu.tr/en/">the Department of Electrical and Electronics Engineering</a> 
-              at <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a>, 
-              where I worked with Assoc. Prof. <a href="https://scholar.google.com/citations?user=UPyjGxgAAAAJ&hl=en">Yildiray Yildiz</a>. </p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="#main">Cevahir <strong>Koprulu</strong></a>
+      <nav aria-label="Main navigation">
+        <a href="#research">Research</a><a href="#experience">Experience</a><a href="#about">About</a>
+        <a class="nav-cv" href="data/CV_CevahirKoprulu.pdf">CV <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="page">
+    <section class="intro" aria-labelledby="name">
+      <div class="intro-copy">
+        <h1 id="name">Cevahir Koprulu</h1>
+        <p class="bio">I’m a final-year PhD student in Electrical and Computer Engineering at <a href="https://www.utexas.edu/">UT Austin</a>, advised by <a href="https://scholar.google.com/citations?user=jeNGFfQAAAAJ">Ufuk Topcu</a>.</p>
+        <p class="bio">I received my B.Sc. in Electrical and Electronics Engineering from <a href="https://w3.bilkent.edu.tr/bilkent/">Bilkent University</a>, where I worked with <a href="https://scholar.google.com/citations?user=UPyjGxgAAAAJ">Yildiray Yildiz</a>.</p>
+        <p class="research-statement">My PhD research focuses on improving the <strong>sample efficiency of reinforcement learning</strong> through automated curriculum generation and reward synthesis.</p>
+        <p class="industry-intro">My industry research spans foundation-model post-training, preference learning, multi-agent self-play, and teacher–student knowledge distillation.</p>
+        <p class="availability"><span class="status-dot" aria-hidden="true"></span>Graduating May 2027 · Seeking research scientist and research engineer roles</p>
+        <div class="profile-links" aria-label="Contact and profiles">
+          <a href="mailto:cevahir.koprulu@utexas.edu">Email <span aria-hidden="true">↗</span></a>
+          <a href="data/CV_CevahirKoprulu.pdf">CV <span aria-hidden="true">↗</span></a>
+          <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ">Scholar <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/cevahir-koprulu">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/in/cevahir-koprulu/">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="portrait"><img src="assets/portrait.webp" alt="Cevahir Koprulu at UT Austin" width="640" height="424" fetchpriority="high"><figcaption>Austin, Texas</figcaption></figure>
+    </section>
 
-              <p style="text-align:center">
-                <a href="mailto:cevahir.koprulu@utexas.edu">Email</a> &nbsp/&nbsp
-                <a href="data/CV_CevahirKoprulu.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/cevahir-koprulu">Github</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/cevahir-koprulu/">LinkedIn</a>
-                <a href="https://twitter.com/cevahirkoprulu/">Twitter</a> &nbsp/&nbsp
-                <a href="https://autonomy.oden.utexas.edu/">Center for Autonomy</a>
-              </p>
+    <section id="experience" class="experience" aria-labelledby="experience-title">
+      <h2 class="section-label" id="experience-title">Industry research</h2>
+      <div class="experience-grid">
+        <article><div class="company-line"><h3>Waymo</h3><span>2026</span></div><p class="role">Software Engineering Intern · Planner team</p><p>Post-training the onboard planner foundation model to unlearn undesirable driving behaviors, using preference learning within Waymo’s training infrastructure.</p><p class="tools">Python · JAX · SQL</p></article>
+        <article><div class="company-line"><h3>Bosch Center for AI</h3><span>2025</span></div><p class="role">Research Intern</p><p>Developed CL4AD to scale curriculum learning to thousands of concurrent self-play agents in GPUDrive.</p><p class="tools">Python · PyTorch</p></article>
+        <article><div class="company-line"><h3>Honda Research Institute</h3><span>2024</span></div><p class="role">Research Intern</p><p>Developed Gen2Spec: teacher–student knowledge distillation through action advice from a generalist meta-RL agent to accelerate specialist training.</p><p class="tools">Python · PyTorch · Ray</p></article>
+      </div>
+    </section>
 
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/Cevahir Koprulu.JPG"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Cevahir Koprulu.JPG" class="hoverZoomLink"></a>
-              <figcaption>  Taken at UT Austin, 2024.</figcaption>
-            </td>
-          </tr>
-        </tbody></table>
+    <section id="research" class="research" aria-labelledby="research-title">
+      <div class="section-heading"><div><p class="eyebrow">Selected work</p><h2 id="research-title">PhD research</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=3vnXbccAAAAJ">Google Scholar <span aria-hidden="true">↗</span></a></div>
+      <p class="section-intro">Reinforcement learning can waste interactions on uninformative tasks, struggle with sparse rewards, or exploit errors in learned dynamics. My work addresses these limitations through adaptive task selection and reward synthesis, using task structure, prior experience, demonstrations, and physics knowledge to improve sample efficiency.</p>
+      <details class="research-group curriculum-group" open>
+        <summary><span><span class="group-title">Automated curriculum generation for efficient, safe and robust RL</span></span><span class="group-count">4 papers</span><span class="disclosure" aria-hidden="true"></span></summary>
+        <div class="paper-list">
+          <article class="paper" id="cl4ad">
+            <a class="figure-link" href="assets/cl4ad.webp" data-figure="CL4AD: curriculum learning in batched autonomous driving simulators" aria-label="Enlarge the CL4AD figure"><img src="assets/cl4ad.webp" width="1800" height="625" alt="CL4AD uses scenario utility scores to adapt traffic-scenario sampling during multi-agent self-play." loading="lazy"><span class="enlarge" aria-hidden="true">↗</span></a>
+            <div class="paper-copy"><p class="paper-meta">arXiv · 2026 <span class="meta-divider">/</span> First author</p><h3><a href="https://arxiv.org/abs/2608.22549">Scaling Curriculum Learning for Autonomous Driving</a></h3><p class="authors"><strong>Cevahir Koprulu</strong>, David Paz, Feng Tao, Yuliang Guo, Xinyu Huang, Ufuk Topcu, Liu Ren</p><p class="contribution">Uniform scenario sampling wastes compute on driving situations that contribute little to learning. CL4AD scales adaptive curricula to thousands of concurrent self-play agents in GPUDrive, prioritizing scenarios using learning progress, safety, and behavioral realism. It reduced wall-clock time to 99% success by 77% compared with uniform sampling and scaled to 80,000 real-world traffic scenarios.</p><div class="paper-links"><a href="https://arxiv.org/abs/2608.22549">Paper <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="paper" id="scg">
+            <a class="figure-link" href="assets/scg.webp" data-figure="Safety-prioritizing curricula for constrained reinforcement learning" aria-label="Enlarge the safety-prioritizing curriculum figure"><img src="assets/scg.webp" width="1800" height="740" alt="SCG prioritizes low-cost contexts before high-reward contexts, then safely approaches the target task distribution." loading="lazy"><span class="enlarge" aria-hidden="true">↗</span></a>
+            <div class="paper-copy"><p class="paper-meta">ICLR · 2025 <span class="meta-divider">/</span> First author</p><h3><a href="https://openreview.net/forum?id=f3QR9TEERH">Safety-Prioritizing Curricula for Constrained Reinforcement Learning</a></h3><p class="authors"><strong>Cevahir Koprulu</strong>, Thiago D. Simão, Nils Jansen, Ufuk Topcu</p><p class="contribution">Curricula that select tasks for reward improvement can undermine safety during training. SCG prioritizes safety before reward, using constrained optimal transport to expand task coverage subject to safety and performance thresholds. It reduced training-time constraint violations without sacrificing final performance across three constrained RL domains.</p><div class="paper-links"><a href="https://openreview.net/forum?id=f3QR9TEERH">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/cevahir-koprulu/safe-curriculum">Code <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="paper" id="racgen">
+            <a class="figure-link" href="assets/racgen.webp" data-figure="RACGEN: risk-aware curriculum generation" aria-label="Enlarge the risk-aware curriculum figure"><img src="assets/racgen.webp" width="1536" height="1024" alt="An auxiliary curriculum identifies and oversamples risky tasks alongside a primary curriculum; rollouts adapt both the curriculum and return analysis." loading="lazy"><span class="enlarge" aria-hidden="true">↗</span></a>
+            <div class="paper-copy"><p class="paper-meta">UAI · 2023 <span class="meta-divider">/</span> First author</p><h3><a href="https://proceedings.mlr.press/v216/koprulu23b.html">Risk-Aware Curriculum Generation for Heavy-Tailed Task Distributions</a></h3><p class="authors"><strong>Cevahir Koprulu</strong>, Thiago D. Simão, Nils Jansen, Ufuk Topcu</p><p class="contribution">Standard curricula can overlook rare, risky tasks under heavy-tailed task distributions. RACGEN augments an off-the-shelf curriculum with an auxiliary curriculum that identifies challenging tasks from their returns and oversamples them during training. This improves both expected return and performance on challenging tail events.</p><div class="paper-links"><a href="https://proceedings.mlr.press/v216/koprulu23b.html">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/cevahir-koprulu/risk-aware-curriculum-generation">Code <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="paper" id="rm-guided">
+            <a class="figure-link" href="assets/rm-guided.webp" data-figure="Reward-machine-guided, self-paced reinforcement learning" aria-label="Enlarge the reward-machine-guided curriculum figure"><img src="assets/rm-guided.webp" width="1536" height="1024" alt="HalfCheetah visits flags in the order 1, 2, 1, 3. Reward-machine transitions identify relevant flag-position parameters for curriculum return estimation." loading="lazy"><span class="enlarge" aria-hidden="true">↗</span></a>
+            <div class="paper-copy"><p class="paper-meta">UAI · 2023 <span class="meta-divider">/</span> First author</p><h3><a href="https://proceedings.mlr.press/v216/koprulu23a.html">Reward-Machine-Guided, Self-Paced Reinforcement Learning</a></h3><p class="authors"><strong>Cevahir Koprulu</strong>, Ufuk Topcu</p><p class="contribution">Standard curricula overlook the subtask structure of long-horizon tasks. The method encodes task order with a reward machine, then uses the dependence of subtask rewards on task parameters to estimate returns and guide task sampling. It solves tasks where standard curricula failed and produces more stable curricula by reducing unnecessary exploration of the task-configuration space.</p><div class="paper-links"><a href="https://proceedings.mlr.press/v216/koprulu23a.html">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/cevahir-koprulu/rm-guided-sprl">Code <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+      </details>
 
-        <tr>
-          <td style="padding:10px;width:100%;vertical-align:middle">
-            <h1>News</h1> 
-            <ul>
-              <li><span> Aug 2026: I finished my summer internship at Waymo on the Planner team! </li>
-              <li><span> Aug 2026: My  work at Bosch CAI, CL4AD, is available on <a href="https://arxiv.org/abs/2608.22549">arXiv!</a></li>
-              <li><span> Aug 2025: I finished my summer research internship at Bosch Center for Artificial Intelligence! </li>
-              <li><span> Aug 2025: I became an organizer at <a href="https://www.cs.utexas.edu/~rlrg/website.md.html">the Reinforcement Learning Reading Group</a> at UT Austin! </li>
-              <li><span> February 2025: One paper got accepted by L4DC 2025! <a href="https://arxiv.org/pdf/2412.01114">Dense Dynamics-Aware Reward Synthesis</a></li>
-              <li><span> Jan 2025: Two papers got accepted by ICLR 2025! <a href="https://openreview.net/forum?id=f3QR9TEERH&referrer=%5Bthe%20profile%20of%20Cevahir%20Koprulu%5D(%2Fprofile%3Fid%3D~Cevahir_Koprulu1)">Safety-Prioritizing Curricula</a> and <a href="https://openreview.net/forum?id=hxUMQ4fic3&referrer=%5Bthe%20profile%20of%20Cevahir%20Koprulu%5D(%2Fprofile%3Fid%3D~Cevahir_Koprulu1)">Neural SDEs for Offline RL</a></li>
-              <li><span> Aug 2024: I finished my summer research internship at Honda Research Institute! </li>
-              <li><span> Aug 2023: New <a href="https://www.sciencedirect.com/science/article/pii/S0004370224000821"> journal paper </a> at Artificial Intelligence 2024!</li>
-              <li><span> Aug 2024: Workshops! Gave a talk at RLBRew and presented the same <a href="https://openreview.net/forum?id=EaaWjhIQwr7"> paper </a> at RLSW during RLC 2024! </li>
-              <li><span> Aug 2023: Two papers presented at UAI 2023!: <a href="https://proceedings.mlr.press/v216/koprulu23b.html"> RACGEN </a> and <a href="https://proceedings.mlr.press/v216/koprulu23a.html"> RM-Guided SPRL </a> </li>
-              <li><span> June 2023: New <a href="https://dl.acm.org/doi/pdf/10.5555/3545946.3598964"> extended abstract </a> at AAMAS 2023! </li>
-              <li><span> Aug 2021: New <a href="https://ieeexplore.ieee.org/abstract/document/9658815"> paper </a> at CCTA 2021!</li>
-            </ul>
-          </td>
-        </tr>
+      <details class="research-group reward-group" open>
+        <summary><span><span class="group-title">Reward synthesis from data and prior knowledge for efficient RL</span></span><span class="group-count">2 papers</span><span class="disclosure" aria-hidden="true"></span></summary>
+        <div class="paper-list">
+          <article class="paper" id="nuno">
+            <a class="figure-link" href="assets/nuno.webp" data-figure="NUNO: uncertainty-aware offline reinforcement learning" aria-label="Enlarge the NUNO figure"><img src="assets/nuno.webp" width="1800" height="1013" alt="NUNO combines physics-informed neural SDE dynamics with distance-aware uncertainty to penalize rewards and truncate uncertain synthetic rollouts." loading="lazy"><span class="enlarge" aria-hidden="true">↗</span></a>
+            <div class="paper-copy"><p class="paper-meta">ICLR · 2025 <span class="meta-divider">/</span> Co-first author</p><h3><a href="https://openreview.net/forum?id=hxUMQ4fic3">Neural Stochastic Differential Equations for Uncertainty-Aware Offline RL</a></h3><p class="authors"><strong>Cevahir Koprulu*</strong>, Franck Djeumou*, Ufuk Topcu</p><p class="contribution">Offline RL policies can exploit errors in learned dynamics, achieving optimistic simulated returns that fail in the real environment. NUNO learns physics-informed dynamics with neural stochastic differential equations and uses distance-aware uncertainty to penalize rewards and truncate unreliable rollouts. It improved performance by <strong>up to 93%</strong> over prior offline RL methods on low-quality D4RL and NeoRL MuJoCo datasets.</p><div class="paper-links"><a href="https://openreview.net/forum?id=hxUMQ4fic3">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/cevahir-koprulu/sde4mbrltatu/tree/iclr2025">Code <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="paper" id="dense-rewards">
+            <a class="figure-link" href="assets/dense-rewards.webp" data-figure="Dense dynamics-aware reward synthesis" aria-label="Enlarge the dense reward synthesis figure"><img src="assets/dense-rewards.webp" width="1800" height="552" alt="Prior task-agnostic experience and expert demonstrations are combined into dense dynamics-aware rewards for efficient online learning." loading="lazy"><span class="enlarge" aria-hidden="true">↗</span></a>
+            <div class="paper-copy"><p class="paper-meta">L4DC · 2025 <span class="meta-divider">/</span> Co-first author</p><h3><a href="https://proceedings.mlr.press/v283/koprulu25a.html">Dense Dynamics-Aware Reward Synthesis: Integrating Prior Experience with Demonstrations</a></h3><p class="authors"><strong>Cevahir Koprulu*</strong>, Po-Han Li*, Tianyu Qiu*, Ruihan Zhao, Tyler Westenbroek, David Fridovich-Keil, Sandeep Chinchali, Ufuk Topcu</p><p class="contribution">Sparse rewards make it difficult to explore beyond a few demonstrated trajectories. This framework combines task-agnostic prior experience with demonstrations to synthesize dense, dynamics-aware rewards that guide exploration around those trajectories. It accelerates policy learning in robot manipulation even when the demonstrations are suboptimal.</p><div class="paper-links"><a href="https://proceedings.mlr.press/v283/koprulu25a.html">Paper <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+      </details>
+      <p class="equal-note">* Equal contribution. Select any figure to view it at full size.</p>
+      <details class="related-work" id="other-publications"><summary>Other publications <span aria-hidden="true">+</span></summary><ul>
+        <li><h3><a href="https://www.sciencedirect.com/science/article/pii/S0004370224000821">Joint Learning of Reward Machines and Policies in Environments with Partially Known Semantics</a></h3><p>Christos Verginis, <strong>Cevahir Koprulu</strong>, Sandeep Chinchali, Ufuk Topcu · <em>Artificial Intelligence</em>, 2024</p></li>
+        <li><h3><a href="https://ieeexplore.ieee.org/abstract/document/9658815">Act to Reason: A Dynamic Game Theoretical Driving Model for Highway Merging Applications</a></h3><p><strong>Cevahir Koprulu</strong>, Yildiray Yildiz · CCTA, 2021</p></li>
+        <li><h3><a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598964">Reward-Machine-Guided, Self-Paced Reinforcement Learning</a></h3><p><strong>Cevahir Koprulu</strong>, Ufuk Topcu · AAMAS, 2023 · Extended abstract</p></li>
+        <li><h3><a href="https://openreview.net/forum?id=EaaWjhIQwr7">Prioritizing Safety via Curriculum Learning</a></h3><p><strong>Cevahir Koprulu</strong>, Thiago D. Simão, Nils Jansen, Ufuk Topcu · RLBRew and RLSW at RLC, 2024</p></li>
+      </ul></details>
+    </section>
 
-       
-        <tr>
-          <td style="padding:10px;width:100%;vertical-align:middle">
-            <h1>Research</h1>
-            <p>
-            My research focuses on reinforcement learning (RL): which tasks an agent trains on and what signal it learns from.
-            My work proposes automated curriculum generation methods for heavy tailed task distributions, temporal specifications, and cost constraints, and for the scale of batched simulators.
-            In addition, it develops methods for reward synthesis from task agnostic experience with a few demonstrations, and from physics informed dynamics models with distance aware uncertainty estimates.
-            My publications can be found on <a href="https://scholar.google.com/citations?user=3vnXbccAAAAJ&hl=en&authuser=1">my Google Scholar page</a>, and some are listed with details below.
-            </p>
-            <p>
-            My Ph.D. includes internships at Waymo, on learning from unsupervised driving data within the data flywheel for onboard planner models;
-            at Bosch Center for Artificial Intelligence, on <strong>CL4AD</strong>, the first integration of CL into batched autonomous driving simulators, accelerating training by 77%;
-            and at Honda Research Institute, on Gen2Spec, an action advising framework that distills knowledge from generalist agents to specialists in a continual learning setting.
-            </p>
-        
-            <h2>Ongoing Work</h2>
-            <ul>
-              <li><span><strong>Curricula for Composing Traffic Behaviors:</strong> My work guides synthetic traffic scenario generation in batched driving simulators through curricula that compose driving behaviors.</li>
-              <li><span><strong>Curricula for Reinforcement Unlearning:</strong> My work escalates task difficulty during RL to make large language models forget targeted knowledge.</li>
-            </ul>
-        
-            <h2>What Agents Train On: Automated Curriculum Generation</h2>
-            A curriculum sequences the tasks an agent trains on and adapts as the agent improves.
-            Standard curriculum learning assumes target task distributions with bounded tails, Markovian rewards, and no safety constraints.
-            My work asks what a curriculum should do when these assumptions fail, and proposes risk aware curricula for heavy tailed task distributions, specification aware curricula guided by reward machines, and safety prioritizing curricula for constrained RL.
-            It also scales curriculum learning and unsupervised environment design to batched autonomous driving simulators that train on real traffic scenarios.
-            <p></p>
-            <h3>Publications</h3>
-        
-            <a href="https://arxiv.org/abs/2608.22549">
-              <papertitle>Scaling Curriculum Learning for Autonomous Driving</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            David Paz,
-            Feng Tao,
-            Yuliang Guo,
-            Xinyu Huang,
-            Ufuk Topcu,
-            Liu Ren
-            <br>
-            <em>ArXiv</em>, 2026
-            <br>
-            <p></p>
-        
-            <a href="https://openreview.net/forum?id=f3QR9TEERH">
-              <papertitle>Safety-Prioritizing Curricula for Constrained Reinforcement Learning</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Thiago D. Simão,
-            Nils Jansen,
-            Ufuk Topcu
-            <br>
-            <em>International Conference on Learning Representations (ICLR)</em>, 2025
-            <br>
-            <p></p>
-        
-            <a href="https://proceedings.mlr.press/v216/koprulu23b.html">
-              <papertitle>Risk-aware Curriculum Generation for Heavy-tailed Task Distributions</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Thiago D. Simão,
-            Nils Jansen,
-            Ufuk Topcu
-            <br>
-            <em>Conference on Uncertainty in Artificial Intelligence (UAI)</em>, 2023
-            <br>
-            <p></p>
-        
-            <a href="https://proceedings.mlr.press/v216/koprulu23a.html">
-              <papertitle>Reward-Machine-Guided, Self-Paced Reinforcement Learning</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Ufuk Topcu
-            <br>
-            <em>Conference on Uncertainty in Artificial Intelligence (UAI)</em>, 2023
-            <br>
-            <p></p>
-        
-            <a href="https://dl.acm.org/doi/abs/10.5555/3545946.3598964">
-              <papertitle>Reward-Machine-Guided, Self-Paced Reinforcement Learning</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Ufuk Topcu
-            <br>
-            <em>International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</em>, 2023 (accepted as Extended Abstract)
-            <br>
-            <p></p>
-        
-            <h3>Workshops</h3>
-            <a href="https://openreview.net/forum?id=EaaWjhIQwr7">
-              <papertitle>Prioritizing Safety via Curriculum Learning</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Thiago D. Simão,
-            Nils Jansen,
-            Ufuk Topcu
-            <br>
-            <em>RLBRew and RLSW at Reinforcement Learning Conference</em>, 2024
-            <br>
-            <p></p>
-        
-            <h2>What Agents Learn From: Reward Synthesis from Offline Data and Prior Knowledge</h2>
-            Sparse rewards and imperfect offline data limit how much an agent learns from each transition.
-            My work synthesizes rewards from offline data and prior knowledge.
-            For long horizon tasks with sparse rewards, it combines task agnostic prior experience with a few demonstrations to construct dense rewards through potential based reward shaping.
-            For offline model based RL, it learns dynamics as neural stochastic differential equations that carry prior physics knowledge, and penalizes synthetic rollouts by their uncertainty estimates.
-            <p></p>
-            <h3>Publications</h3>
-        
-            <a href="https://arxiv.org/pdf/2412.01114">
-              <papertitle>Dense Dynamics-Aware Reward Synthesis: Integrating Prior Experience with Demonstrations</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Po-han Li,
-            Tianyu Qiu,
-            Ruihan Zhao,
-            Tyler Westenbroek,
-            David Fridovich-Keil,
-            Sandeep Chinchali,
-            Ufuk Topcu
-            <br>
-            <em>Learning for Dynamics and Control (L4DC) Conference</em>, 2025
-            <br>
-            <p></p>
-        
-            <a href="https://openreview.net/forum?id=hxUMQ4fic3">
-              <papertitle>Neural Stochastic Differential Equations for Uncertainty-Aware Offline RL</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Franck Djeumou,
-            Ufuk Topcu
-            <br>
-            <em>International Conference on Learning Representations (ICLR)</em>, 2025
-            <br>
-            <p></p>
-        
-            <h2>Other Work</h2>
-            <h3>Publications</h3>
-        
-            <a href="https://www.sciencedirect.com/science/article/pii/S0004370224000821">
-              <papertitle>Joint Learning of Reward Machines and Policies in Environments with Partially Known Semantics</papertitle>
-            </a>
-            <br>
-            Christos Verginis,
-            <strong>Cevahir Koprulu</strong>,
-            Sandeep Chinchali,
-            Ufuk Topcu
-            <br>
-            <em>Artificial Intelligence</em>, 2024
-            <br>
-            <p></p>
-        
-            <a href="https://ieeexplore.ieee.org/abstract/document/9658815">
-              <papertitle>Act to Reason: A Dynamic Game Theoretical Driving Model for Highway Merging Applications</papertitle>
-            </a>
-            <br>
-            <strong>Cevahir Koprulu</strong>,
-            Yildiray Yildiz
-            <br>
-            <em>IEEE Conference on Control Technology and Applications (CCTA)</em>, 2021
-            <br>
-            <p></p>
+    <section class="directions" aria-labelledby="directions-title"><div><h2 id="directions-title">Ongoing research</h2></div><div class="direction-grid">
+      <article><h3>Generalization to diverse traffic in self-play</h3><p>Agents trained through self-play can overfit to the behaviors of their training partners and struggle against unfamiliar traffic. I’m investigating curriculum-guided scenario generation that composes diverse driving behaviors, exposing agents to a broader range of interactions to improve behavior generalization.</p></article>
+      <article><h3>Curricula for LLM unlearning</h3><p>LLM unlearning can remove targeted knowledge at the cost of capabilities that should be retained. This work investigates whether adapting the sequence and difficulty of unlearning tasks during RL post-training can improve targeted forgetting while preserving unrelated capabilities.</p></article>
+    </div></section>
 
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                This website is based on Jon Barron's <a href="https://github.com/jonbarron/jonbarron_website" style="font-size:small;"> source code</a>.
-                His website can be found <a href="https://jonbarron.info/" style="font-size:small;">here</a>.
-                <br>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <section id="about" class="about" aria-label="Background and research community"><div class="about-grid"><div><h2>Background</h2><div class="education"><p><strong>PhD in Electrical and Computer Engineering</strong><br>UT Austin · Expected May 2027</p><p><strong>B.Sc. in Electrical and Electronics Engineering</strong><br>Bilkent University · 2021</p></div></div><div><h2>Research community</h2><p>Organizer of the <a href="https://www.cs.utexas.edu/~rlrg/website.md.html">UT Austin Reinforcement Learning Reading Group</a> since August 2025.</p><p>Reviewer for NeurIPS, ICML, ICLR, AAAI, AISTATS, and TMLR.</p></div></div></section>
+    <footer><span>Cevahir Koprulu · UT Austin</span><a href="mailto:cevahir.koprulu@utexas.edu">Let’s connect <span aria-hidden="true">↗</span></a></footer>
+  </main>
+  <dialog id="figure-dialog" aria-labelledby="figure-caption"><div class="dialog-toolbar"><p id="figure-caption"></p><button type="button" id="close-figure" aria-label="Close enlarged figure">Close <span aria-hidden="true">×</span></button></div><img id="enlarged-figure" alt=""><a id="original-figure" href="assets/cl4ad.webp" target="_blank" rel="noopener">Open full-size image <span aria-hidden="true">↗</span></a></dialog>
 </body>
-
 </html>
